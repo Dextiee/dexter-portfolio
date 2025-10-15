@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/src/images/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dexter John Perdido</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      (function () {
+        const size = 64;
+        const canvas = document.createElement('canvas');
+        canvas.width = size;
+        canvas.height = size;
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+
+        // Draw blue circular outline (no fill)
+        ctx.beginPath();
+        ctx.arc(size / 2, size / 2, (size / 2) - 2, 0, Math.PI * 2);
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = '#2563eb'; // Tailwind blue-600
+        ctx.stroke();
+
+        const img = new Image();
+        img.crossOrigin = 'anonymous';
+        img.src = '/src/images/icon.png';
+        img.onload = function () {
+          const scale = 0.5; // icon scale relative to canvas (more gap)
+          const w = size * scale;
+          const h = size * scale;
+          ctx.drawImage(img, (size - w) / 2, (size - h) / 2, w, h);
+
+          let link = document.querySelector('link[rel="icon"]');
+          if (!link) {
+            link = document.createElement('link');
+            link.setAttribute('rel', 'icon');
+            document.head.appendChild(link);
+          }
+          link.setAttribute('type', 'image/png');
+          link.setAttribute('href', canvas.toDataURL('image/png'));
+        };
+      })();
+    </script>
+  </body>
+</html>
