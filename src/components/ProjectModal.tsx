@@ -10,12 +10,12 @@ interface ProjectModalProps {
 const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose }) => {
   if (!project) return null;
 
-  const typeStyle =
-    project.project_type === 'company'
-      ? "border-0 text-[rgb(0_212_160/var(--tw-text-opacity,1))] bg-[rgb(0_212_160_/_0.1)]"
-      : project.project_type === 'client'
-      ? 'border-amber-500 text-amber-400 bg-amber-500/10'
-      : 'border-purple-500 text-purple-400 bg-purple-500/10';
+  // const typeStyle =
+  //   project.project_type === 'company'
+  //     ? "border-0 text-[rgb(0_212_160/var(--tw-text-opacity,1))] bg-[rgb(0_212_160_/_0.1)]"
+  //     : project.project_type === 'client'
+  //     ? 'border-amber-500 text-amber-400 bg-amber-500/10'
+  //     : 'border-purple-500 text-purple-400 bg-purple-500/10';
 
   return (
     <AnimatePresence>

@@ -41,7 +41,7 @@ export const sampleExperiences: Omit<Experience, 'id' | 'created_at'>[] = [
     company: 'TechCorp Solutions',
     description: 'Led development of multiple web applications using React, Node.js, and cloud technologies. Mentored junior developers and implemented CI/CD pipelines.',
     start_date: '2022-01-01',
-    end_date: null, // Current position
+    end_date: undefined, // Current position
   },
   {
     role: 'Frontend Developer',

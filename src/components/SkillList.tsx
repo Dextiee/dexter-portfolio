@@ -87,7 +87,9 @@ const SkillList: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      {Object.entries(groupedSkills).map(([category, categorySkills]) => (
+      {Object.entries(groupedSkills).map(([category, categorySkills]) => {
+        const skills = categorySkills as any[];
+        return (
         <motion.div
           key={category}
           initial={{ opacity: 0, y: 20 }}
@@ -97,11 +99,11 @@ const SkillList: React.FC = () => {
         >
           <div className="bg-gray-700 px-6 py-4 border-b border-gray-600">
             <h3 className="text-lg font-semibold text-white">{category}</h3>
-            <p className="text-gray-400 text-sm">{categorySkills.length} skill{categorySkills.length !== 1 ? 's' : ''}</p>
+            <p className="text-gray-400 text-sm">{skills.length} skill{skills.length !== 1 ? 's' : ''}</p>
           </div>
           
           <div className="divide-y divide-gray-700">
-            {categorySkills.map((skill, index) => (
+            {skills.map((skill: any, index: number) => (
               <motion.div
                 key={skill.id}
                 initial={{ opacity: 0, x: -20 }}
@@ -161,7 +163,8 @@ const SkillList: React.FC = () => {
             ))}
           </div>
         </motion.div>
-      ))}
+        );
+      })}
 
       {/* Form Modal */}
       {showForm && (

@@ -27,7 +27,7 @@ export const useImageUpload = () => {
       const filePath = `${folder}/${fileName}`;
 
       // Upload file to Supabase Storage
-      const { data, error } = await supabase.storage
+      const { error } = await supabase.storage
         .from('portfolio-images')
         .upload(filePath, file, {
           cacheControl: '3600',
