@@ -70,12 +70,31 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isFeatured = false, 
       
       {/* View More Button */}
       <div className="mt-auto">
-        <button 
-          onClick={() => onViewMore?.(project)}
-          className="w-full bg-transparent border border-blue-500 text-blue-400 font-medium py-3 px-4 rounded-lg text-sm hover:bg-blue-500/10 hover:text-blue-300 transition-all duration-200"
-        >
-          View more
-        </button>
+        {project.link ? (
+          <div className="flex gap-2">
+            <button 
+              onClick={() => onViewMore?.(project)}
+              className="flex-1 bg-transparent border border-blue-500 text-blue-400 font-medium py-3 px-4 rounded-lg text-sm hover:bg-blue-500/10 hover:text-blue-300 transition-all duration-200"
+            >
+              View more
+            </button>
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg text-sm transition-all duration-200 text-center"
+            >
+              View Project
+            </a>
+          </div>
+        ) : (
+          <button 
+            onClick={() => onViewMore?.(project)}
+            className="w-full bg-transparent border border-blue-500 text-blue-400 font-medium py-3 px-4 rounded-lg text-sm hover:bg-blue-500/10 hover:text-blue-300 transition-all duration-200"
+          >
+            View more
+          </button>
+        )}
       </div>
     </div>
   );
