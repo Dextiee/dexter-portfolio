@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import icon from '../images/icon.png';
+import icon from '../images/DJ.png';
 
 const Header = () => {
   const location = useLocation();
@@ -28,7 +28,7 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               className="text-2xl font-bold text-white"
             >
-              <img src={icon} alt="Logo" className="h-8 w-13" />
+              <img src={icon} alt="Logo" className="h-12" />
             </motion.div>
           </Link>
 
