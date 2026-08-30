@@ -1,0 +1,311 @@
+# Dexter John Perdido | Full Stack Developer
+
+> Portfolio site: https://dexter-portfolio-ebon.vercel.app
+> This file is a complete, machine-readable summary of the portfolio for AI
+> assistants and crawlers. Content is regenerated from the live database on
+> every deployment.
+
+## About
+
+Dexter John Perdido is a Computer Engineer working as a freelance Full Stack
+Developer, building production web and mobile platforms for clients across
+solar energy, SaaS, and real estate. Recent work includes the Solar X
+marketing and customer-experience platform, the Efficyon FinOps product, and
+the Psalmix music streaming platform. Previously a Science Research Analyst,
+he built the ARECGIS renewable-energy mapping platform, the CARES offline
+survey app, and an IoT hydroponics automation system. Skilled in Next.js,
+React, TypeScript, Node.js, Express.js, Supabase, MongoDB, React Native, and
+MQTT, with additional experience in GIS integration and system deployment.
+
+- Role: Full Stack Developer (Web & Mobile)
+- Email: dexterjohnperdido@gmail.com
+- GitHub: https://github.com/Dextiee
+- LinkedIn: https://www.linkedin.com/in/dexter-john-perdido
+- Resume: https://dexter-portfolio-ebon.vercel.app/resume.pdf
+- Contact page: https://dexter-portfolio-ebon.vercel.app/contact
+
+## Projects
+
+### Solar X — Solar Energy Platform & Marketing Site
+
+A high-performance marketing and customer-experience platform for a national solar energy company, pairing a conversion-focused public site with authenticated customer and employee portals. It blends programmatic local SEO at scale, interactive service-area mapping, and self-serve account tooling to move homeowners and businesses from first click through installation and ongoing support.
+
+Notable Features
+•	Customer Portal: Real-time project-status tracking, document center, support-ticket system, guided troubleshooting flows (battery, error-code, monitoring, Wi-Fi), and referral management behind NextAuth-secured sessions.
+•	Employee Portal: Incentive tracking and identity verification for field and sales staff, separated from the customer-facing experience.
+•	Programmatic Local SEO: Hundreds of auto-generated, geo-targeted landing pages (Ontario city installs, multi-province location hubs) with inline LocalBusiness, HowTo, and VideoObject schema markup for rich-result coverage.
+•	Interactive Coverage Maps: Mapbox GL and Leaflet maps with Turf.js geospatial logic to render service areas and route prospects to their region.
+•	Solar Savings Calculator: Interactive estimator that surfaces projected savings and incentive eligibility to qualify leads early.
+•	Product Support Knowledge Base: Structured, per-device support and installation guides across inverters, batteries, panels, and HVAC equipment.
+•	CRM-Integrated Lead Pipeline: HubSpot integration with contact export, regional filtering, and lead-capture forms (React Hook Form + Zod validation).
+•	Performance-Tuned Delivery: Video-carousel hero with mobile-aware loading, AVIF/WebP image optimization, dynamic imports, and IndexNow submission for fast indexing.
+
+- Type: client
+- Technologies: Next.js 16, React 19, TypeScript, Tailwind CSS v4, Framer Motion, NextAuth v5 (Auth.js), Supabase / PostgreSQL, Mapbox GL & Leaflet (Turf.js geospatial), Radix UI / shadcn, React Hook Form + Zod, Recharts, HubSpot CRM, Vercel
+- Link: https://solar-x.ca/
+
+### Efficyon
+
+A B2B SaaS FinOps platform that helps businesses detect cost leaks and optimize their software and cloud spend. It connects to a company's accounting, productivity, and commerce systems, runs a blend of rule-based and AI-driven analyses to surface duplicate payments, unused subscriptions, and spend anomalies, then turns those findings into prioritized, money-saving recommendations, giving finance and operations teams centralized visibility into where every dollar goes and how to claw it back.
+
+Notable Features
+•	Multi-Source Integration Hub: One-click OAuth connections to Fortnox, Microsoft 365, HubSpot, QuickBooks, Shopify, and Google Workspace, plus AI-consumption tracking for OpenAI, Anthropic, and Gemini, all powered by a single-source-of-truth tool registry that makes new integrations a drop-in.
+•	Cost Leak Detection Engine: Automated algorithms that flag duplicate payments, statistical outliers, recurring subscriptions, overdue invoices, and creeping price increases across connected data sources.
+•	AI-Powered Insights & Chat: LLM-generated savings recommendations, narrative usage summaries, and a conversational assistant that lets users ask questions about their own spend findings.
+•	Team & Role-Based Access Control: Company-scoped workspaces with Owner, Editor, and Viewer roles, shared subscriptions and integration limits, and an email-based invite flow with seat management.
+•	Automated Reporting & Scheduling: Background cron schedulers generate monthly spend snapshots, email reports, and continuously backfill API-consumption usage data without manual intervention.
+•	Subscription Billing & Onboarding: Tiered Stripe plans with token-based usage credits and a guided multi-step onboarding flow that captures company details, goals, and payment in one pass.
+•	Admin Dashboard: Internal oversight tools for customer management, user approval, analytics, and a scheduled internal test-agent system.
+
+- Type: client
+- Technologies: Next.js 16, React 19, TypeScript, Tailwind CSS v4, Radix UI, Framer Motion, Recharts, Express.js 5, Supabase (PostgreSQL), NextAuth (JWT), Stripe, Anthropic / OpenAI / Gemini APIs, Resend, AWS SDK (Cost Explorer, Compute Optimizer), node-cron, PostHog, Vercel
+- Link: https://efficyonv2.vercel.app/
+
+### Psalmix
+
+A premium music streaming platform delivering AI-generated, values-aligned music with mainstream production quality. It combines sophisticated content classification, personalized recommendations, and multi-generational appeal to provide families and value-conscious consumers with current-sounding music that aligns with their principles.
+
+  Notable Features
+  - AI-Powered Music Generation: GPT-5.1 integrated lyric creation, Suno music production, theme-based generation pipeline, and automated quality scoring.
+  - Content Classification System: Multi-tier maturity levels (Universal, Teen, Young Adult, Adult), theme-based filtering, and values-aligned content curation.
+  - Smart Recommendations: Personalized music discovery, values-mix algorithm, preference learning, and genre-based suggestions.
+  - Parental Controls & Family Features: Content filtering by maturity level, family account management, listening activity monitoring, and kid-safe modes.
+  - Premium Streaming Experience: Real-time playback, playlist management, offline sync capability, and cross-device continuity.
+  - User Onboarding & Personalization: Multi-step preference collection, maturity-appropriate content matching, and organizational affiliations.
+
+- Type: client
+- Technologies: Next.js, Supabase, React, TypeScript, Tailwind CSS, Framer Motion, Zustand, TanStack Query, Howler.js, Socket.io, Vercel, Suno API, Cloudflare R2, Upstash Redis, Sentry
+- Link: https://www.psalmix.com/landing
+
+### Solar Rooftop Estimator
+
+A production-grade solar estimation platform for Canadian homeowners that turns a rooftop and a power bill into an accurate, province-specific savings projection in minutes. It pairs interactive satellite-map roof drawing with real-time NREL PVWatts modeling and a full installer-network layer with lead routing, serving Ontario, Alberta, Nova Scotia, and British Columbia, each with its own rate structures, incentive programs, and calculation logic.
+
+Notable Features
+•	Three Adaptive Estimator Journeys: Easy mode (preset roof sizes, fastest path), Detailed mode (interactive Mapbox polygon drawing with per-section orientation and categorized photo upload), and Instant mode (single-field bill-to-savings calculator), each tuned to a different user intent and friction tolerance.
+•	Province-Aware Solar Engine: Real-time NREL PVWatts production modeling combined with province-specific net metering (TOU/ULO/Tiered, Alberta Solar Club), demand-charge peak-shaving, snow-loss derating, and 25-year financial projections — with province auto-detected via IP geolocation.
+•	Interactive Roof Tooling: Satellite-map polygon drawing with geofencing validation, dynamic panel-layout placement, and Konva-based roof visualization, plus a mobile-friendly photo-upload alternative.
+•	Battery & Peak-Shaving Optimization: Hour-by-hour battery dispatch and state-of-charge scheduling, demand-charge reduction, and B2B (kVA) commercial demand optimization.
+•	Lead Capture & Installer Network: Progressive multi-step lead capture with localStorage auto-save/resume, partial-lead tracking, HubSpot CRM sync, UTM/click-ID attribution, and proximity-based installer matching with a dedicated installer dashboard.
+•	Admin & Operations Layer: Protected admin and installer portals with session-based auth, lead assignment/expiry cron jobs, analytics, KPI uploads, and feedback management.
+•	Utility Bill Import: Green Button data parsing to import real annual usage patterns for higher-accuracy estimates.
+•	SEO Content Platform: 65+ indexed pages with JSON-LD structured data, dynamic province routes, and a 200+ post blog system.
+
+- Type: client
+- Technologies: Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS v4, Supabase (PostgreSQL), Mapbox GL JS, Turf.js / JSTS, Konva, NREL PVWatts API, HubSpot CRM, Resend / Nodemailer, PostHog, Recharts, jsPDF, Zod, Vercel
+- Link: https://solarcalculatorcanada.org/
+
+### ShiftAI — Grid-Aware Solar Intelligence (Marketing & Lead-Gen Platform)
+
+A conversion-focused marketing and lead-generation platform for a Canadian supervisory-intelligence product that optimizes residential and commercial solar, battery storage, and load management, calibrated for Ontario's grid. The site translates a technically dense energy-optimization product into clear, audience-segmented narratives backed by custom data visualizations, then captures and routes qualified leads directly into a CRM with a full audit trail.
+
+Notable Features
+•	Audience-Segmented Landing Pages: Dedicated residential, commercial, and technology journeys — each with tailored messaging, pricing logic, and decision-stage content for homeowners, businesses, and technical evaluators.
+•	Custom Energy Data Visualizations: Hand-built, dependency-free charts including time-of-use (TOU/ULO) rate timelines, commercial load profiles, demand-charge breakdowns, and CapEx comparison bars — illustrating Ontario-specific grid economics.
+•	CRM-Integrated Lead Capture: Zod-validated contact forms that search-and-upsert contacts into HubSpot (create vs. update), with lead status, lifecycle stage, and UTM attribution mapped automatically.
+•	Persistent Submission Audit Trail: Every form submission and API error is logged to PostgreSQL with status tracking, HTTP codes, and full request context for observability and lead reconciliation.
+•	SEO & Structured Data: JSON-LD schema graph (Organization, WebSite, WebPage), dynamic sitemap.ts and robots.ts, and Canadian-localized metadata for regional search visibility.
+•	Scroll-Reveal Motion & Responsive Design: Lightweight reveal animations and a fully responsive Tailwind v4 design system delivering a premium, performance-optimized experience.
+
+- Type: client
+- Technologies: Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS v4, Zod, PostgreSQL, HubSpot CRM API, Vercel, Sonner, Lucide React
+- Link: https://shiftaienergy.ca/
+
+### Solar X Tools — Internal Operations Platform
+
+A unified internal operations portal for an Ontario solar company, consolidating 17 purpose-built tools across sales and project management into a single, polished dashboard. It combines financial modeling, AI-assisted workflows, CRM integration, and branded document generation to help reps quote faster, managers track installs end-to-end, and support teams triage issues, all behind domain-restricted authentication and a registry-driven architecture where each tool is fully isolated and independently deployable.
+
+Notable Features
+• Multi-Tool Dashboard Architecture — registry-driven portal of 17 isolated tools across Sales and Project Management categories, each independently routed, permissioned, and toggleable without touching shared code.
+• Solar Quoting & Financial Modeling — bill estimation, system sizing, and BOM cost engines with live $/W benchmarks, IESO/ITC/CCA incentive stacks, payback, IRR, and 25-year cashflow projections.
+• AI-Powered Workflows — Claude-driven escalation triage, lead scoring, call QA, SLA enforcement, draft email/reply generation, and daily manager briefings.
+• HubSpot CRM Integration — live ticket triage, pipeline sync, drag-and-drop deal stages, and note export across the sales and support tools.
+• Document Generation & Export — branded invoices, itemized cost breakdowns, and commercial proposals rendered to PDF, DOCX, PPTX, and XLSX with penny-exact reconciliation and audit trails.
+• Project Management Suite — kanban pipeline for 70+ early-stage projects, install operations tracking from deposit to commissioning, Leaflet-based field map, and design validation runs.
+• Secure, Server-Hardened Core — Supabase auth restricted to company email domains, server-side cost/margin engines with redline floors, and isolated API routes that never expose secret keys to the client.
+
+- Type: client
+- Technologies: Next.js 16, React 19, TypeScript, Tailwind CSS v4, shadcn/ui, Supabase, Framer Motion, Recharts, Leaflet, Anthropic Claude API, HubSpot API, Resend, React PDF, Vercel
+- Link: https://solar-x-tools.vercel.app/
+
+### TTCC Hub
+
+An internal operations platform for a Philippine accounting firm, built around the recurring monthly, quarterly, and annual BIR (Bureau of Internal Revenue) tax-compliance filings that drive the firm's billable work. It unifies compliance tracking, staff attendance, daily activity reporting, task management, and document storage behind a single role-aware workspace — replacing scattered spreadsheets with an auditable, Asia/Manila-timezone-correct system of record. A four-tier role model (accountant → admin → owner) enforces "see your own data, then your reports, then the whole firm" visibility entirely at the database layer via RLS.
+
+Notable Features
+•	BIR Compliance Engine: Client-by-form matrix view of every filing obligation (1601-C, 2550Q, 1701Q, and more), an 8-stage filing workflow with status tracking, owner-only write protection on legal records, per-form due-date grouping, and document attachments per filing.
+•	Compliance-Grade Attendance: Clock-in/clock-out with confirmation dialogs, configurable lunch-window deductions, an immutable soft-delete audit trail (timesheets feed billable hours), and a manager team view.
+•	Daily Activity Reports (DAR): Personal and team DAR submission, review, and print-ready preview, integrated with the compliance workflow so filing activity is captured as it happens.
+•	Task Management: Firm-wide task creation and assignment, threaded comments with edit history, archiving, and a self-assigned to-do flow that can reopen from an approved state.
+•	Role-Based Access Control: Accountant / manager / admin / owner hierarchy implemented end-to-end in Postgres RLS, with admin tooling for user management, firm settings, and a full audit log.
+•	Reporting & Exports: Print-ready, branded report previews for attendance, tasks, and the audit log, generated server-side for clean PDF output.
+•	Document Storage: Per-filing and general file storage on Supabase Storage, with a live storage-usage gauge in the sidebar fed by a custom Postgres RPC.
+•	Notifications: Configurable per-user preferences with daily compliance due-date alerts and transactional email delivery via Resend.
+
+- Type: client
+- Technologies: Next.js 14, React 18, TypeScript, Supabase, Tailwind CSS, Radix UI, TanStack Query, TanStack Table, React Hook Form, Zod, TipTap, Resend, Vercel
+- Link: https://ttcc-hub.vercel.app/
+
+### RDeGuzman Janitorial Services Website
+
+A polished web presence for Rey De Guzman Janitorial Services, crafted to showcase premium cleaning programs for corporate, residential, and hospitality clients. The site blends refined branding with responsive layouts, immersive imagery, and subtle motion to highlight service breadth, client trust, and easy ways to book a walkthrough. Fully deployed on Hostinger for fast, reliable access.
+
+Notable Features
+•	Concierge-Style Positioning: Hero messaging, service highlights, and trust-building copy tailored to luxury property stakeholders.
+•	Signature Service Catalog: Detailed overviews for carpet care, stripping & waxing, glass detailing, and bespoke residential/commercial programs.
+•	Solutions Deep Dive: Secondary services grid emphasizing sanitation, event support, and specialty offerings with iconography and storytelling.
+•	Conversion-Ready Contact Flow: Streamlined request form, prominent CTAs, and complete contact details to capture site walkthrough inquiries.
+•	Interactive Service Area Map: Leaflet-powered map module that visualizes coverage across Edmonton, enhancing geographic trust and clarity.
+
+- Type: client
+- Technologies: HTML5, Bootstrap, JavaScript, Leaflet.js, AOS & Swiper.js
+- Link: https://www.rdeguzmanjanitorialservices.com/
+
+### Real Estate Website
+
+Developed a responsive real estate website for a Nevada-based realtor, delivering a modern, performance-focused experience that showcases properties, services, and contact flows.
+
+Key Features & Technical Implementation:
+•	Responsive Design Architecture: Built a fully responsive, mobile-first site using custom CSS with Bootstrap integration, ensuring consistent UX across devices with smooth animations and transitions
+•	Interactive Property Search System: Implemented a comprehensive search interface with multi-criteria filtering (location, property type, bedrooms, bathrooms, price range), real-time form validation, and dynamic result handling with keyboard navigation support
+•	Custom Photo Gallery with Advanced Features: Created a JavaScript-powered carousel with autoplay controls, touch/swipe gestures, lazy loading, and an accessible lightbox modal with keyboard navigation and focus management
+•	Performance Optimization: Implemented lazy loading for images, debounced scroll handlers, hardware-accelerated animations, and conditional feature reduction for low-end devices to ensure fast load times
+•	Interactive Map Integration: Integrated Leaflet.js with OpenStreetMap to display the business location with custom markers and branded popups, providing seamless location visualization without API costs
+•	Accessibility & UX Enhancements: Built accessible navigation with ARIA labels, semantic HTML structure, keyboard shortcuts, and visual feedback systems for disabled navigation items, ensuring WCAG compliance
+
+- Type: client
+- Technologies: HTML5, CSS3, JavaScript, Bootstrap, Leaflet.js
+- Link: https://real-estate-website-dexter-perdido.vercel.app/
+
+### ARECGIS
+
+A comprehensive Renewable Energy Management Platform designed to track, monitor, and optimize solar, wind, hydro, geothermal, and biomass energy systems. It integrates real-time monitoring, geospatial mapping, AI-assisted solar planning, and multi-role user collaboration to streamline energy management and decision-making.
+
+Notable Features
+•	Renewable Energy Management: Multi-category support, FIT integration, asset transfers, and real-time system monitoring.
+•	Interactive Mapping & Visualization: Leaflet maps, geospatial analysis, heat maps, drawing tools, and geocoding integration.
+•	AI-Powered Solar Calculator: PV system sizing, ROI and cost-benefit analysis, AI chatbot for planning, GPS-based solar data, and weather integration.
+•	User & Collaboration Management: Multi-role access, request approvals, organizational affiliations, and detailed user profiles.
+•	Mobile & API Support: RESTful API, mobile app compatibility with offline sync, Swagger documentation, and secure rate limiting.
+
+- Type: company
+- Technologies: React, Node.js, MongoDB, Express.js, Leaflet.js
+- Link: https://arec.mmsu.edu.ph/
+
+### CARES Offline Mobile Survey App
+
+Developed a mobile survey application for the Affiliated Renewable Energy Center (AREC) at Mariano Marcos State University. The application serves as a critical tool for inventorying and analyzing non-commercial renewable energy systems across the Philippines.
+
+Key Features & Technical Implementation:
+• Multi-Survey Platform: Integrated three distinct survey types - Socio-Economic Data Collection, Technical System Assessment, and Non-Commercial Solar Power System Evaluation
+• Offline-First Architecture: Built with React Native and Expo, featuring complete offline functionality with automatic data synchronization when connectivity is restored
+• Advanced Data Management: Implemented Firebase Realtime Database for cloud storage with AsyncStorage for local data persistence
+• GPS Integration: Real-time location capture with reverse geocoding for precise system mapping and inventory tracking
+
+- Type: company
+- Technologies: EAS, React Native, TypeScript, Firebase
+
+### ARECGIS Mobile App
+
+Developed a mobile Geographic Information System (GIS) application for the Affiliated Renewable Energy Center (AREC) at Mariano Marcos State University. The application serves as a critical tool for inventorying, mapping, and analyzing non-commercial renewable energy systems across the Philippines. 
+
+Key Features & Technical Implementation:
+• Dual-Mode Architecture: Implemented both online and offline functionality with seamless mode switching based on connectivity status, ensuring continuous operation in remote areas with limited internet access
+• Interactive Web-Based Mapping: Online mode integrates with Leaflet-based interactive maps hosted on the AREC website, providing real-time visualization of renewable energy installations with zoom, pan, and layer control capabilities
+• Solar Calculator & Estimation Tools: Online mode includes comprehensive solar calculator functionality that estimates solar system costs and energy production based on roof size, location, and energy consumption patterns, helping users make informed decisions about solar investments
+• Nearby Inventory Detection: Created proximity-based duplicate detection system that checks for existing renewable energy installations within specified radius before allowing new submissions
+• App Store Deployment: Successfully published the application on the Apple App Store, ensuring wide accessibility and streamlined distribution to end-users nationwide.
+
+- Type: company
+- Technologies: React Native, EAS, Typescript, Leaflet, MongoDB, AsyncStorage
+
+###  IoT-based Hydroponics Management System
+
+Developed an IoT-based hydroponics management system for the Affiliated Renewable Energy Center (AREC) at MMSU. The application serves as an intelligent monitoring and control platform for three independent NFT (Nutrient Film Technique) hydroponic systems, enabling real-time data collection, analysis, and automated system management.
+
+Key Features & Technical Implementation:
+• Multi-System IoT Platform: Integrated three independent hydroponic systems with real-time monitoring of pH levels, TDS (Total Dissolved Solids), water temperature, flow rates, light intensity, and environmental parameters
+• Real-Time Data Visualization: Built interactive dashboards with Chart.js integration, featuring dual-axis charts, time-series analysis, and customizable date range filtering for comprehensive data analysis
+• MQTT-Based Communication: Implemented robust MQTT protocol for real-time sensor data transmission and device control, supporting multiple system topics and status monitoring
+• Advanced Data Management: Developed RESTful API endpoints with MongoDB integration for historical data storage, supporting both hourly and daily data aggregation with timezone handling
+• Intelligent System Control: Created automated control interfaces for lights, water pumps, and AC systems with confirmation dialogs and real-time status synchronization
+• Data Export & Analytics: Implemented CSV export functionality with dynamic parameter selection.
+
+- Type: company
+- Technologies: React.js, Material-UI, Chart.js, Vite, Node.js, Express.js, MongoDB, Mongoose, MQTT
+
+### TTCC Website
+
+Website for Tayawa Tolentino CPAs & Company (TTCC)
+Deployed a public-facing client inquiry website using a Hostinger website template to enhance TTCC’s online presence and improve client accessibility. The site enables potential and existing clients to submit inquiries, request information, and connect with the firm through a secure and responsive platform.
+
+Key Contributions:
+• Customized and configured a Hostinger website template to align with TTCC’s branding and service needs.
+• Set up an inquiry form system to capture and forward client requests for follow-up by the firm’s staff.
+• Ensured responsive design for accessibility across desktop and mobile devices.
+• Deployed the website on the official domain: inquire.tayawacpa.net.
+
+- Type: company
+- Technologies: Wordpress, HTML, CSS, Javascript
+- Link: https://inquire.tayawacpa.net/
+
+### File Management System
+
+Developed a file management system to streamline document tracking, task assignment, and reporting. The system enhanced operational efficiency by digitizing workflows, improving document accessibility, and enabling real-time monitoring of tasks and reports.
+
+Key Features & Technical Implementation:
+• Dashboard & Analytics: Interactive admin dashboard showing client counts, document status, pending tasks, completed tasks, and weekly report visibility
+• Document Management: Secure document upload, categorization, and retrieval with search and filtering capabilities
+• Task & Workflow Automation: Task assignment and approval workflows with real-time status tracking and notifications
+• User Management: Role-based access control with permission-managed content
+
+- Type: company
+- Technologies: HTML, CSS, Javascript, PHP, MySQL, Hostinger
+- Link: https://www.tayawacpa.net/
+
+## Experience
+
+### Freelance Software Engineer at Self-Employed (November 2025 to Present)
+
+• Designed and developed custom websites and web applications for multiple clients, helping businesses strengthen their digital presence and improve customer engagement.
+• Delivered responsive, high-performance web solutions that improved client inquiry rates and online conversions by up to 30%.
+• Automated business workflows through tailored web systems, reducing manual processes and improving operational efficiency by up to 40%.
+• Built secure full-stack applications using React, Node.js, Express.js, and MongoDB, ensuring scalability and long-term maintainability.
+• Integrated third-party APIs (payment gateways, authentication systems, email services) to streamline business operations and enhance user experience.
+• Managed end-to-end project lifecycles — from requirements gathering and system design to deployment and post-launch support — consistently delivering projects on time and within scope.
+• Optimized website performance and SEO strategies, increasing site traffic and improving search visibility for client businesses.
+
+### Science Research Analyst at Mariano Marcos State University (October 2024 to October 2025)
+
+• Developed a web application to automate the Indoor Hydroponics System, improving efficiency in crop production monitoring.
+• Developed and deployed the ARECGIS mobile app, published on the App Store for iOS and made available for Android users through the ARECGIS web app, supporting nationwide renewable energy data collection and mapping.
+• Built the CARES mobile application for offline survey deployment with data synchronization once connected online.
+• Applied skills in full-stack and mobile development using React, Node.js, Express.js, MongoDB, and React Native.
+• Contributed to research-driven software solutions that supported renewable energy initiatives and smart agriculture.
+
+### Full Stack Developer Intern at Tayawa Tolentino CPAs & Company (July 2023 to August 2023)
+
+• Developed a File Management System which improved document tracking, secure storage, and faster retrieval of records.
+• Created a responsive company website to strengthen digital presence and improve accessibility for clients.
+• Collaborated with the development team in designing, coding, and testing applications, applying principles of full-stack development.
+• Gained practical experience in system analysis, database management, and front-end development.
+• Delivered functional and reliable software solutions within the OJT program timeframe, leaving a lasting impact on company operations.
+
+## Skills
+
+- **Backend**: Node.js (expert), Express.js (advanced)
+- **Database**: MongoDB (advanced), Supabase (advanced), MySQL (expert), Firebase (advanced)
+- **Design**: Figma (intermediate)
+- **DevOps**: Vite (advanced), Docker (intermediate), Expo Application Services (expert), Git (expert)
+- **Frontend**: Next.js (expert), React (expert), Tailwind CSS (advanced), HTML/CSS (expert)
+- **IoT**: Arduino (advanced), MQTT (advanced)
+- **Languages**: TypeScript (expert), JavaScript (expert)
+- **Mobile**: React Native (advanced)
+
+## Site Structure
+
+- https://dexter-portfolio-ebon.vercel.app/ : Home and about
+- https://dexter-portfolio-ebon.vercel.app/projects : All projects
+- https://dexter-portfolio-ebon.vercel.app/experience : Work experience timeline
+- https://dexter-portfolio-ebon.vercel.app/skills : Skills and proficiency levels
+- https://dexter-portfolio-ebon.vercel.app/contact : Contact form and links

@@ -1,0 +1,32 @@
+# Portfolio of Dexter John Perdido
+# All crawlers, including AI assistants, are welcome.
+
+User-agent: *
+Allow: /
+Disallow: /admin
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://dexter-portfolio-ebon.vercel.app/sitemap.xml
+
+# Machine-readable summary of this portfolio for LLMs:
+# https://dexter-portfolio-ebon.vercel.app/llms.txt

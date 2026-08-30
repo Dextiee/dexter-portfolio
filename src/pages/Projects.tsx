@@ -36,38 +36,39 @@ const Projects = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-primary-600"></div>
+      <div className="min-h-full flex items-center justify-center py-32">
+        <div className="animate-spin rounded-full h-12 w-12 border-2 border-gray-700 border-t-accent-400"></div>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-full flex items-center justify-center py-32">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Error</h2>
-          <p className="text-gray-600">{error}</p>
+          <h2 className="text-2xl font-bold text-white mb-4">Something went wrong</h2>
+          <p className="text-gray-400">{error}</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen py-16">
+    <div className="min-h-full py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            My Projects
+          <span className="eyebrow mb-3">Portfolio</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-5">
+            My <span className="text-gradient">Projects</span>
           </h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            A collection of projects I've worked on, showcasing my skills in
+          <p className="text-lg md:text-xl text-gray-400 max-w-3xl">
+            A collection of projects I&apos;ve worked on, showcasing my skills in
             full-stack development, UI/UX design, and problem-solving.
           </p>
         </motion.div>
@@ -81,11 +82,11 @@ const Projects = () => {
             className="text-center py-16"
           >
             <div className="text-6xl mb-4">🚀</div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-2xl font-bold text-white mb-4">
               No Projects Yet
             </h3>
-            <p className="text-gray-600">
-              Projects will appear here once they're added to the database.
+            <p className="text-gray-400">
+              Projects will appear here once they&apos;re added to the database.
             </p>
           </motion.div>
         ) : (
